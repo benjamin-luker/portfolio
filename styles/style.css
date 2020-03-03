@@ -66,15 +66,26 @@ body::-webkit-scrollbar-thumb {
 	background: var(--accent);
 }
 
+/* Navbar */
 .navbar {
 	top: 0;
 	border-top: solid 2px var(--accent);
 	background-color: var(--bg-secondary);
 	width: 100%;
+	justify-content: center;
 }
 .navbar-nav {
 	display: flex;
+	list-style: none;
 }
 .nav-item {
 	color: var(--accent);
+}
+.nav-item:last-child {
+	margin-left: auto;
+}
+.nav-link {
+	color: var(--text-secondary);
+	text-decoration: none;
+	padding: 1rem;
 }
