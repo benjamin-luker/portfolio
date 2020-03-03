@@ -44,6 +44,19 @@ h1 {
 	margin: 0;
 }
 
+/* Scroll Bar*/
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+	background: var(--accent);
+}
+
 .navbar {
 	top: 0;
 	border-top: solid 2px var(--accent);
