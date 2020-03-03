@@ -33,6 +33,12 @@ h1 {
 	font-size: 1.2rem;
 	opacity: 0.6;
 }
+.button:hover {
+	background-color: var(--accent);
+	color: var(--text-primary);
+	border: none;
+	opacity: 1;
+}
 #particles-js {
 	z-index: 1;
 	height: 100vh;
