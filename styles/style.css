@@ -3,12 +3,14 @@
 	font-family: "Open Sans";
 	--bg-primary: rgba(255, 255, 255, 0.822);
 	--bg-secondary: rgba(0, 0, 0, 0.87);
+	--nav-bg: rgb(42, 46, 42);
 	--text-primary: black;
 	--text-secondary: white;
 	--accent: #8bc34a;
 }
 html {
 	scroll-behavior: smooth;
+	box-sizing: border-box;
 }
 main,
 body {
@@ -68,25 +70,26 @@ body::-webkit-scrollbar-thumb {
 
 /* Navbar */
 .navbar {
-	top: 0;
-	border-top: solid 2px var(--accent);
-	background-color: var(--bg-secondary);
+	padding: 0;
+	margin: 0;
+	background-color: var(--nav-bg);
 	width: 100%;
-	justify-content: center;
 }
 .navbar-nav {
-	display: flex;
 	list-style: none;
+	display: flex;
+	margin: 0;
 }
-
-.nav-item:hover {
-	background-color: var(--bg-primary);
+.navbar li:hover {
+	background-color: black;
+	color: var(--accent);
 }
-.nav-item:last-child {
+.navbar li:last-child {
 	margin-left: auto;
 }
-.nav-link {
+.navbar li a {
 	color: var(--text-secondary);
 	text-decoration: none;
-	padding: 1rem;
+	padding: 8px;
+	display: block;
 }
