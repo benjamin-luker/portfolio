@@ -78,8 +78,9 @@ body::-webkit-scrollbar-thumb {
 	display: flex;
 	list-style: none;
 }
-.nav-item {
-	color: var(--accent);
+
+.nav-item:hover {
+	background-color: var(--bg-primary);
 }
 .nav-item:last-child {
 	margin-left: auto;
