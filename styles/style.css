@@ -7,6 +7,9 @@
 	--text-secondary: white;
 	--accent: #8bc34a;
 }
+html {
+	scroll-behavior: smooth;
+}
 main,
 body {
 	margin: 0;
