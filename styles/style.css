@@ -7,8 +7,6 @@
 	--text-primary: black;
 	--text-secondary: white;
 	--accent: #8bc34a;
-}
-html {
 	scroll-behavior: smooth;
 	box-sizing: border-box;
 }
@@ -17,8 +15,9 @@ body {
 	margin: 0;
 	padding: 0;
 	top: 0;
-	position: relative;
 }
+
+/* Welcome Section*/
 
 h1 {
 	z-index: 2;
