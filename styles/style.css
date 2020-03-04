@@ -1,5 +1,5 @@
 :root {
-	font-size: 1.5vw;
+	font-size: 1.3vw;
 	font-family: "Open Sans";
 	--bg-primary: rgba(255, 255, 255, 0.822);
 	--bg-secondary: rgba(0, 0, 0, 0.87);
@@ -26,20 +26,7 @@ h1 {
 #h1-name {
 	color: var(--accent);
 }
-.button {
-	background-color: transparent;
-	color: var(--text-secondary);
-	border: 2px solid var(--text-secondary);
-	padding: 15px 32px;
-	font-size: 1.2rem;
-	opacity: 0.6;
-}
-.button:hover {
-	background-color: var(--accent);
-	color: var(--text-primary);
-	border: none;
-	opacity: 1;
-}
+
 #particles-js {
 	z-index: 1;
 	height: 100vh;
@@ -52,6 +39,44 @@ h1 {
 	background-color: var(--bg-secondary);
 	padding: 0;
 	margin: 0;
+}
+/* Button Anim */
+button {
+	background: rgba(58, 58, 58, 0.548);
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 60px;
+	font-size: 1rem;
+	padding: 0 2em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+}
+button:hover {
+	color: var(--accent);
+}
+button:before,
+button:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: var(--accent);
+	transition: 400ms ease all;
+}
+button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+button:hover:before,
+button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
 }
 
 /* Scroll Bar*/
