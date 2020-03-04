@@ -43,6 +43,7 @@ h1 {
 /* Navbar */
 nav {
 	width: 100%;
+	opacity: 0.9;
 }
 ul {
 	margin: 0;
